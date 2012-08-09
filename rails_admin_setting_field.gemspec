@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Adds a setting field to rails_admin."
   s.description = "A setting field for RailsAdmin that can be used to manipulate values from rails-settings."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 3.2.6"
 end
