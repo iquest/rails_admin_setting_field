@@ -22,7 +22,7 @@ module RailsAdmin
           end
 
           register_instance_option(:formatted_value) do
-            "#{real_value}"
+            "#{real_value.class == Array ? real_value.join(", ") : real_value}"
           end
 
           register_instance_option(:help) do
