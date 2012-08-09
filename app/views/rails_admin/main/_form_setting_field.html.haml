@@ -1,0 +1,8 @@
+- if field.real_value.class == Fixnum
+  =form.send :number_field, field.name, :value => field.real_value.to_i
+- elsif field.real_value.class == Float
+  =form.send :number_field, field.name, :value => field.real_value.to_f
+- elsif field.real_value.class == TrueClass || field.real_value.class == FalseClass
+  =form.send :check_box, field.name, :value => field.real_value
+- else
+  =form.send :text_field, field.name, :value => field.real_value.to_s
